@@ -62,8 +62,8 @@ body {
 
 #buduras {
 	position: relative;
-	top:-69px;
-	left:65px;
+	top:-74px;
+	left:66px;
 }
 
 #buduras-lights {
@@ -77,7 +77,87 @@ body {
 
 #buduras-bg {
 	position: absolute;
+	width: 200px;
 	height: auto;
 	top: 0;
+	left: 0
+}
+
+/* Each story circle follow these styles  */
+.story {
+	position: relative;
+	width: 160px;
+	height: 160px;
+}
+
+/* All image of the story (lights + image) */
+.story > img {
+	position: absolute;
+}
+
+.story-lights {
+	width: 150px;
+	height: 150px;
+	top: 0;
 	left: 0;
+}
+
+/* Background of the lights */
+.light-bg {
+	width: 150px;
+	height: 150px;
+	top: 0;
+	left: 0;
+}
+
+.story-image {
+		width: 124px;
+		height: 124px;
+		top: 14px;
+		left: 13px;
+}
+
+#story-1 {
+    top: 69px;
+    left: 161px;
+}
+
+#story-2 {
+	top:-198px;
+	left:295px;
+}
+
+#story-3 {
+    top: -413px;
+    left: 136px;
+}
+
+#story-4 {
+    top: -684px;
+    left: 279px;
+}
+
+#story-5 {
+    top: -965px;
+    left: 465px;
+}
+
+#story-6 {
+    top: -1006px;
+    left: 638px;
+}
+
+#story-7 {
+    top: -1059px;
+    left: 772px;
+}
+
+#story-8 {
+    top: -1165px;
+    left: 617px;
+}
+
+#story-9 {
+    top: -1218px;
+    left: 746px;
 }
