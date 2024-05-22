@@ -17,25 +17,29 @@ body {
 	justify-content: center;
 }
 
+#thorana {
+	z-index: 0;
+	width: 85%;
+	height:710px;
+	position: relative; /* Setting this property to relative makes all the elements of thorana position relative to the main image */
+}
+
+#peacocBg {
+	position: absolute;
+	width: 100%;
+	height: auto;
+}
+
 #loading-screen > h1 {
 	color: white;
 	font-size: 40px;
 }
 
-#thorana {
-	z-index: 0;
-	position: relative; /* Setting this property to relative makes all the elements of thorana position relative to the main image */
-}
-
-#thorana > img {
-	position: absolute;
-}
-
 #budda-rupaya-with-lights {
-	width: 300px; /* Grouping the both buddha rupaya and lights */
-	height: 300px;
+	width: 24vw; /* Grouping the both buddha rupaya and lights */
+	height: 24vh;
 	position: relative;
-	top: 276px;
+	top: 20%;
 	left: 317px;
 }
 
@@ -43,19 +47,28 @@ body {
 	z-index: 10;
 	/* Positioned relative to the #buddha-rupaya-with-lights */ 
 	position: absolute;
+	width: 100%;
+	height: auto;
 	left:0;
 	top:0;
 }
 
 #buduras {
 	position: relative;
-	top:-65px;
+	top:-60px;
 	left:33px;
 }
 
 #buduras-lights {
 	/* Positioned relative to the #buduras */
 	position: absolute;
-	top:5px;
-	left: 5px;
+	top:3px;
+	left: 2px;
+	width: 20vw;
+	height: auto;
+}
+
+#buduras-bg {
+	width: 20vw;
+	height: auto;
 }
