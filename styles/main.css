@@ -10,7 +10,7 @@ body {
 	top: 0;
 	left: 0;
 	z-index: 10;
-	width: 100vw;	
+	width: 100vw;
 	height: 100vh;
 	display: flex;
 	align-items: center;
@@ -160,4 +160,27 @@ body {
 #story-9 {
     top: -1218px;
     left: 746px;
+}
+
+#padama {
+	position: relative;
+	width: 702px;
+	height: 400px;
+	top:-362px;
+	left:169px;
+}
+
+#padama-banner {
+	position: absolute;
+	width: 702px;
+	height: auto;
+	top: 0px;
+	left: 0px;
+}
+
+#padama-lights {
+    position: absolute;
+    width: 837px;
+    top: -68px;
+    left: -66px;
 }
