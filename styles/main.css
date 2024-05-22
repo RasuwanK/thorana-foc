@@ -2,9 +2,6 @@ body {
 	margin: 0;
 	background-color: black;
 	height: 100vh;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
 }
 
 #loading-screen {
@@ -30,3 +27,35 @@ body {
 	position: relative; /* Setting this property to relative makes all the elements of thorana position relative to the main image */
 }
 
+#thorana > img {
+	position: absolute;
+}
+
+#budda-rupaya-with-lights {
+	width: 300px; /* Grouping the both buddha rupaya and lights */
+	height: 300px;
+	position: relative;
+	top: 276px;
+	left: 317px;
+}
+
+#buddha-rupaya {
+	z-index: 10;
+	/* Positioned relative to the #buddha-rupaya-with-lights */ 
+	position: absolute;
+	left:0;
+	top:0;
+}
+
+#buduras {
+	position: relative;
+	top:-65px;
+	left:33px;
+}
+
+#buduras-lights {
+	/* Positioned relative to the #buduras */
+	position: absolute;
+	top:5px;
+	left: 5px;
+}
