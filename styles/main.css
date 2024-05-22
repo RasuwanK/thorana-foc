@@ -164,9 +164,10 @@ body {
 
 #padama {
 	position: relative;
+	z-index: 20;
 	width: 702px;
-	height: 400px;
-	top:-362px;
+	height: auto;
+	top:-1159px;
 	left:169px;
 }
 
@@ -183,4 +184,21 @@ body {
     width: 837px;
     top: -68px;
     left: -66px;
+}
+
+.flags {
+	z-index: 20;
+	position: relative;
+	width: 60px;
+	height: auto;
+}
+
+#left-flag {
+	top: 10px;
+	left: -35px;
+}
+
+#right-flag {
+	top: 10px;
+	left: 607px;
 }
