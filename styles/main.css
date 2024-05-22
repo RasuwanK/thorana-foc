@@ -1,0 +1,32 @@
+body {
+	margin: 0;
+	background-color: black;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#loading-screen {
+	position: absolute;
+	background-color: black;
+	top: 0;
+	left: 0;
+	z-index: 10;
+	width: 100vw;	
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#loading-screen > h1 {
+	color: white;
+	font-size: 40px;
+}
+
+#thorana {
+	z-index: 0;
+	position: relative; /* Setting this property to relative makes all the elements of thorana position relative to the main image */
+}
+
