@@ -1,6 +1,30 @@
 body {
 	margin: 0;
 	background-color: black;
+	background-size:cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-image: url("../assets/images/thorana-background.webp");
+	margin-bottom: 100px;
+}
+
+#info-container {
+	z-index: 50;
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	position: fixed;
+	visibility: hidden;
+	top: 0;
+	left: 0;
+	background-color: rgba(0, 0, 0, 0.597);
+}
+
+#info-container > img {
+	width: 900px;
 }
 
 #loading-screen {
@@ -8,7 +32,7 @@ body {
 	background-color: black;
 	top: 0;
 	left: 0;
-	z-index: 10;
+	z-index: 50;
 	width: 100vw;
 	height: 100vh;
 	display: flex;
@@ -16,6 +40,45 @@ body {
 	justify-content: center;
 }
 
+#welcome-prompt {
+	position: fixed;
+	top:0;
+	left:0;
+	z-index: 20;
+	width: 100vw;
+	height: 100vh;
+	background-color: black;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+#welcome-prompt > h2 {
+	color:#e6d4b6;
+	font-size: 15px;
+}
+
+#welcome-prompt > h1 {
+	color: rgb(224, 203, 15);
+	font-size: 50px;
+}
+
+#enter-button {
+	transition-property: all;
+	transition-duration: 0.8s;
+	background-color: white;
+	color: black;
+	border:none;
+	border-radius: 20px;
+	font-size: 25px;
+	padding: 15px;
+	cursor: pointer;
+}
+
+#enter-button:hover {
+	background-color:#e6d4b6 ;
+}
 
 #loading-screen > h1 {
 	color: white;

@@ -1,11 +1,16 @@
-<!-- Source code for USJ thorana -->
+<!-- Source code for USJ FOC thorana -->
+<!-- 
+    This source code is created by the 
+        ** Faculty of Computing **
+            *** J'Pura *** 
+-->
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ස්වර්ණ මයුර කතා වස්තුව - FOC තොරණ</title>
-    <link rel="stylesheet" type="text/css" href="./styles/main.css" />
+    <link rel="stylesheet" type="text/css" href="./styles/thorana.css" />
     <script type="text/javascript" src="./js/loading.js"></script>
   </head>
   <body>
@@ -13,6 +18,11 @@
       <h1 id="loading-message">රැදීසිටින්න</h1>
     </aside>
     <!-- All the components of thorana will reside here -->
+    <div id="welcome-prompt">
+      <h2>ශ්‍රී ජයවර්ධනපුර විශ්වවිද්‍යාලයේ පරිගණක පීඨය විසින්  පලමු වරට  කරන ඉදිරිපත්</h2>
+      <h1>ස්වර්ණ මයුර කතා වස්තුව</h1>
+      <button id="enter-button">පිවිසෙන්න</button>
+    </div>
     <div id="thorana">
       <!-- Main background -->
       <img id="peacocBg" src="./assets/images/peacock-bg.webp" alt="Main-bg" />
@@ -225,29 +235,22 @@
           alt="Wawing Buddhist flag"
         />
       </div>
-      <img
-        id="left-monara"
-        src="./assets/images/monara-2.webp"
-        alt="Image of a peacock"
-      />
-      <img
-        id="right-monara"
-        src="./assets/images/monara-1.webp"
-        alt="Image of a peacock"
-      />
     </div>
     <aside id="media-controls">
       <button id="mute-button"></button>
       <button id="about-button"></button>
     </aside>
+    <div id="info-container">
+      <img src="./assets/images/info-popup.webp" alt="About the thorana" />
+    </div>
     <!-- this media player must be hidden (no "controls") -->
     <aside id="media-player">
-      <audio id="thorana-audio" autoplay loop>
+      <audio id="thorana-audio" loop>
         <source src="./assets/audio/track.mp3" type="audio/mpeg" />
         Your browser does not support audio
       </audio>
     </aside>
-    <script src="./js/audio.js" type="text/javascript" defer>
+    <script src="./js/main.js" type="text/javascript" defer>
     </script>
   </body>
 </html>
