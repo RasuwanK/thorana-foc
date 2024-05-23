@@ -274,6 +274,7 @@ body {
   top: 10px;
   left: 10px;
   width: 200px;
+  transform: scaleX(-1);
 }
 
 #right-monara {
