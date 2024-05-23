@@ -4,7 +4,7 @@
 
 // Adding the loading event listener
 
-window.addEventListener("load", () => {
+window.addEventListener("DOMContentLoaded", () => {
 	// This will run after loading the window
 	const loadingScreen = document.getElementById("loading-screen");
 	if(loadingScreen) {

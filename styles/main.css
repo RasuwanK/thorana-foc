@@ -1,11 +1,10 @@
 body {
 	margin: 0;
 	background-color: black;
-	height: 100vh;
 }
 
 #loading-screen {
-	position: absolute;
+	position: fixed;
 	background-color: black;
 	top: 0;
 	left: 0;
@@ -23,19 +22,22 @@ body {
 	font-size: 40px;
 }
 
+/* Never change width and height of containers  */
+
 /* contains all thorana elements */
 #thorana {
 	z-index: 0;
-	width: 702px;
-	height:1035px;
+	width: 1200px;
+	height: 990px;
+	position:absolute;
+	left:calc(50% - 610px);
 	position: relative; /* Setting this property to relative makes all the elements of thorana position relative to the main image */
 }
 
 /* Background peacoc image */
 #peacocBg {
 	position: absolute;
-	width: 1035px;
-	height: 702px;
+	width: 1200px;
 	top:0;
 	left:0;
 }
@@ -45,8 +47,8 @@ body {
 	width: 415px; /* Grouping the both buddha rupaya and lights */
 	height: 400px;
 	position: relative;
-	top: 300px;
-	left: 367px;
+	top: 413px;
+    left: 444px
 }
 
 /* Budddha rupaya (image only) */
@@ -86,8 +88,8 @@ body {
 /* Each story circle follow these styles  */
 .story {
 	position: relative;
-	width: 160px;
-	height: 160px;
+	width: 200px;
+	height: 200px;
 }
 
 /* All image of the story (lights + image) */
@@ -96,94 +98,95 @@ body {
 }
 
 .story-lights {
-	width: 150px;
-	height: 150px;
+	width: 200px;
+	height: 200px;
 	top: 0;
 	left: 0;
 }
 
 /* Background of the lights */
 .light-bg {
-	width: 150px;
-	height: 150px;
+	width: 200px;
+	height: 200px;
 	top: 0;
 	left: 0;
 }
 
 .story-image {
-		width: 124px;
-		height: 124px;
-		top: 14px;
-		left: 13px;
+    width: 170px;
+    height: 170px;
+    top: 17px;
+    left: 14px;
 }
 
 #story-1 {
-    top: 69px;
-    left: 161px;
+    top: 154px;
+    left: 141px;
 }
 
 #story-2 {
-	top:-198px;
-	left:295px;
+    top: -176px;
+    left: 317px;
 }
 
 #story-3 {
-    top: -413px;
-    left: 136px;
+    top: -458px;
+    left: 119px;
 }
 
 #story-4 {
-    top: -684px;
-    left: 279px;
+    top: -783px;
+    left: 306px;
 }
 
 #story-5 {
-    top: -965px;
-    left: 465px;
+    top: -1063px;
+    left: 504px;
 }
 
 #story-6 {
-    top: -1006px;
-    left: 638px;
+    top: -1186px;
+    left: 703px;
 }
 
+
 #story-7 {
-    top: -1059px;
-    left: 772px;
+    top: -1271px;
+    left: 884px;
 }
 
 #story-8 {
-    top: -1165px;
-    left: 617px;
+    top: -1378px;
+    left: 697px;
 }
 
 #story-9 {
-    top: -1218px;
-    left: 746px;
+    top: -1455px;
+    left: 861px;
 }
 
 #padama {
-	position: relative;
-	z-index: 20;
-	width: 702px;
-	height: auto;
-	top:-1159px;
-	left:169px;
-}
-
-#padama-banner {
-	position: absolute;
-	width: 702px;
-	height: auto;
-	top: 0px;
-	left: 0px;
+    position: relative;
+    z-index: 20;
+    width: 900px;
+    height: 100px;
+    top: -1403px;
+    left: 189px;
 }
 
 #padama-lights {
     position: absolute;
-    width: 837px;
-    top: -68px;
-    left: -66px;
+    width: 993px;
+    top: -79px;
+    left: -73px;
+}
+
+#padama-banner {
+    position: absolute;
+    width: 845px;
+    height: auto;
+    top: 0px;
+    left: 0px;
 }
 
 .flags {
@@ -199,6 +202,51 @@ body {
 }
 
 #right-flag {
-	top: 10px;
-	left: 607px;
+    top: 10px;
+    left: 751px;
+}
+
+/* Monara is positioned relative to the padama */
+#left-monara {
+	position: relative;
+	top:10px;
+	left:10px;
+	width: 200px;
+}
+
+#right-monara {
+	position: relative;
+	top:10px;
+	left: 10px;
+	width: 200px;
+}
+
+#media-controls {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap:15px;
+	position: relative;
+	width:200px;
+	height:50px;
+	left:calc(50% + 100px);
+	top:40px;
+}
+
+#media-controls > button {
+	width: 40px;
+	height: 40px;
+	border-radius: 100%;
+	border: none;
+	background-repeat: none;
+	background-size: cover;
+	cursor:pointer;
+}
+
+#mute-button {
+	background-image: url("../assets/images/sounds-on.webp");
+}
+
+#about-button {
+	background-image: url("../assets/images/info.webp");
 }
